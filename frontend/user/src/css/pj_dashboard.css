@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* 대시보드 요소 공통 */
+.dashboard-content span { font-size: 15px; font-weight: 800; } 
+.dashboard1 .dashboard-content .dashboard-content-element { display: flex; flex-direction: column; align-items: center; padding: 0 20px; justify-content: center; } 
+.dashboard1 .dashboard-content .dashboard-content-element span { text-align: center; } 
+#container .dashboard { width: 100%; display: flex; flex-flow: wrap; justify-content: space-between; } 
+#container .dashboard article { border: 1.5px solid #000000; background-color: #ffffff; box-sizing: border-box; } 
+#container .dashboard article:nth-child(1) { margin-bottom: 20px; } 
+#container { min-height: 100%; width:calc(100% - 230px); min-width: 1300px; background-color: #f2f4f6; margin-left: 230px; padding: 50px; box-sizing: border-box; } 
+
+.dashboard-h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* 대시보드1 */
+.dashboard .dashboard1 { width: calc(80% - 10px); height: 165px; display: flex; align-items: center; } 
+.dashboard1 .dashboard-content { display: flex; box-sizing: border-box; width: 100%; } 
+.dashboard1 .dashboard-content .content-left { width: 22%; border-right: 1px solid #cbcbcb; display: flex; align-items: center; justify-content: center; box-sizing: border-box; } 
+.dashboard1 .dashboard-content .content-left #count { color: #FF4343; } 
+.dashboard1 .dashboard-content .content-right { width: 78%; display: flex; padding: 20px 25px; box-sizing: border-box; justify-content: space-between; } 
+.dashboard1 .dashboard-content span { font-size: 18px; font-weight: 600; box-sizing: border-box; } 
+.dashboard1 .dashboard-content #count { font-size: 26px; font-weight: 800; padding-bottom: 15px; box-sizing: border-box; } 
+.dashboard1 .dashboard-content .content-right #hr { border: 1px solid #000000; } 
+.dashboard1 .dashboard-content .content-right .dashboard-content-element { width: 25%; } 
+
+/* 대시보드2 */
+.dashboard .dashboard2 { width: calc(20% - 10px); height: 165px; display: flex; flex-direction: column; justify-content: center; padding: 7px; box-sizing: border-box; } 
+.dashboard .dashboard2 .dashboard-content { display: flex; height: 100%; flex-direction: column; justify-content: space-between; } 
+.dashboard .dashboard2 .dashboard-content button { padding: 13px 20px; box-sizing: border-box; background-color: #FF4343; color: #ffffff; font-size:16px; font-weight: 600; } 
+
+/* 대시보드 타입3 공통 */
+.dashboard-type3 .dashboard-title { height: 50px; border-bottom: 1px solid #707070; display: flex; align-items: center; justify-content: space-between; padding: 0 12px; box-sizing: border-box;} 
+.dashboard-type3 .dashboard-title img {height: 22px;} 
+.dashboard-type3 .dashboard-title .dashboard-title-left span {margin-left: 5px; font-size: 18px; font-weight: 800; } 
+.dashboard-type3 .dashboard-title .dashboard-title-right span {font-size: 16px; font-weight: 700; } 
+
+/* 대시보드3 */
+.dashboard3 { width: calc(50% - 20px); height: 550px; } 
+.chart--container { height: 370px; width: 100%; } 
+.zc-ref { display: none; } 
+.chart--container div:first-child { height: 300px; } 
+
+/* 대시보드4 */
+
+/* 대시보드5 */
+.dashboard3 { width: calc(50% - 20px); height: 470px; margin-top: 20px; } 
+.dashboard3 .dashboard-content { height: 400px; overflow-y: scroll; padding: 26px; box-sizing: border-box; } 
+.dashboard3 .dashboard-content .dashboard-content-element { padding: 15px 10px; box-sizing: border-box; border: 1px solid #707070; border-radius: 10px; margin-bottom: 15px; } 
+.dashboard3 .dashboard-content::-webkit-scrollbar { width: 6px; } 
+.dashboard3 .dashboard-content::-webkit-scrollbar-thumb { height: 17%; background-color: #a0a0a0; border-radius: 10px; } 
+.dashboard3 .dashboard-content::-webkit-scrollbar-track { background-color: rgba(0,0,0,0); } 
+.dashboard3 .dashboard-content .dashboard-content-element p { font-size: 16px; font-weight: 500; } 
+.dashboard3 .dashboard-content .dashboard-content-element #content { padding: 10px 0; box-sizing: border-box; font-size: 16px; } 
+.dashboard3 .dashboard-content .dashboard-content-element #date { color: #7c7c7c; } 
+.dashboard3 .dashboard-content .dashboard-content-element #cate { color: #FF4343; } 
+.dashboard3 .dashboard-content .dashboard-content-element:last-child { margin-bottom: 0; } 
+
+/* 팝업 */
+.background1 { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.3); z-index: 1000; z-index: -1; opacity: 0; } 
+.background2 { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.3); z-index: 1000; z-index: -1; opacity: 0; } 
+.show { opacity: 1; z-index: 1000; transition: all 0.5s; } 
+.window { position: relative; width: 100%; height: 100%; } 
+.popup { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); background-color: #ffffff; box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3); width: 400px; height: 140px; transform: translate(-50%, -40%); } 
+.show .popup { transform: translate(-50%, -50%); transition: all 0.5s; } 
+.popup .title-area { font-weight: 700; width: 100%; height: 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #a8a8a8; padding: 0 15px; box-sizing: border-box; } 
+.popup .content-area-wrap { height: calc(100% - 24px); display: flex; flex-direction: column; justify-content: space-between; } 
+.popup .content-area { height: calc(100% - 50px); padding: 20px 15px; display: flex; flex-direction: column; justify-content: space-between; } 
+.popup .content-area span { padding-bottom: 5px; } 
+.popup .content-area input { width: 240px; } 
+.popup .btn-area { width: 100%; height: 50px; display: flex; align-items: center; justify-content: flex-end; border-bottom: 1px solid #a8a8a8; padding: 0 10px; box-sizing: border-box; } 
+.popup .btn-area button { color: #fff; background-color: rgb(170, 170, 170); padding: 5px 12px; font-weight: 700; font-size: 10px; margin-left: 8px; } 
+.popup .btn-area #comfirm { background-color: #FF4343; } 
+.background2 table td { color: #000; border: 0.5px solid #474747; border-collapse: collapse; padding: 5px 3px; } 
+.background2 table td:nth-child(2n+1) { font-weight: 800; background-color: #c2c2c2; text-align: center; } 

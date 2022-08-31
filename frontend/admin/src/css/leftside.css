@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/* ----좌측메뉴---- */
+.main-left .lnb{display: flex; flex-direction: column;}
+.lnb .list-box{border-bottom: 1px solid #243654; cursor: pointer;}
+.lnb .list{display: flex; justify-content: space-between; height: 50px; border-left: 5px solid#EBEBEB;}
+.lnb .list h3{padding: 17px 20px;}
+.lnb .list button{margin-right: 10px; cursor: pointer;}
+.lnb .list-box .sub-list{border-top: 1px solid #aaa;}
+.lnb .sub-list a{display: block; padding: 17px 20px; border-left: 5px solid #EBEBEB;  box-sizing: border-box; height: 50px;}

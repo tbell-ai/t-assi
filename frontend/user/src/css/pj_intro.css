@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+#pj-main{height: 100%;}
+.pj-wrap { width: 100%; height: 100%;} 
+
+#wrap{height:100%}
+/* #container { min-height: 100%; width:calc(100% - 180px); background-color: #f2f4f6; margin-left: 180px; padding: 40px 50px; box-sizing: border-box; }  */
+
+/* 프로젝트 개요 */
+#container .pj-export article { border-bottom: 1px solid #bebebe; background-color: #ffffff; box-sizing: border-box; } 
+.pj-wrap { background-color: #ffffff; border: 1.5px solid #000000; background-color: #ffffff; box-sizing: border-box; height: 100%; } 
+#container .pj-export, #container .project-export-content { height: auto; } 
+#container .pj-wrap .pj-title-area { width: 100%; height: 50px; border-bottom: 1px solid #000000; background-color: #ffffff; box-sizing: border-box; display: flex; align-items: center; padding: 0 30px; } 
+#container .pj-wrap .pj-title-area img{height: 20px; margin-right: 5px;}
+#container .pj-wrap .pj-title-area span { font-size:18px; font-weight: 800; } 
+#container .pj-wrap .pj-content-area {width: 100%; height: calc(100% - 30px); padding: 30px; box-sizing: border-box; overflow-y: scroll; } 
+#container .pj-wrap .pj-content-area::-webkit-scrollbar { width: 6px; } 
+#container .pj-wrap .pj-content-area::-webkit-scrollbar-thumb { height: 17%; background-color: #a0a0a0; border-radius: 10px; } 
+#container .pj-wrap .pj-content-area::-webkit-scrollbar-track { background-color: rgba(0,0,0,0); } 
+.pj-outline .table-type1{padding-top: 20px; box-sizing: border-box;}
+.table-type1 td { font-size: 16px; font-weight: 500; }
+.table-type1 p { font-size: 18px; font-weight: 800; margin-bottom: 10px;}

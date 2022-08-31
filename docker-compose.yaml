@@ -1,0 +1,73 @@
+version: "3.8"
+
+networks:
+  tbell-net:
+    driver: bridge
+
+services:
+  db:
+    image: mysql:8
+    restart: always
+    container_name: t-assi-db
+    ports:
+      - "3308:3306"
+    environment:
+      - MYSQL_DATABASE=t_platform
+      - MYSQL_ROOT_HOST=%
+      - MYSQL_ROOT_PASSWORD=Tbell0518!
+      - TZ=Asia/Seoul
+    command:
+      bash -c "chmod 644 /etc/mysql/conf.d/*.cnf && /entrypoint.sh mysqld"
+    volumes:
+      - ./my-conf:/etc/mysql/conf.d
+      - ./data:/var/lib/mysql
+    networks:
+      tbell-net:
+  cache:
+    image: redis:6.2.6
+    restart: always
+    command: redis-server --requirepass Tbell0518! --port 6379
+    container_name: t-assi-cache
+    labels:
+      - "name=redis"
+      - "mode=standalone"
+    ports:
+      - 6378:6379
+    volumes:
+      - ./cache/:/data
+      - ./conf/redis.conf:/usr/local/conf/redis.conf
+    networks:
+      tbell-net:
+  backend:
+    container_name: spring-app
+    build:
+      context: ./
+      dockerfile: ./backend/Dockerfile
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/t_platform?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: Tbell0518!
+      SPRING_REDIS_HOST: cache
+      SPRING_REDIS_PORT: 6379
+    ports:
+      - 8090:8090
+    depends_on:
+      - db
+      - cache
+    restart: on-failure
+    networks:
+      tbell-net:
+  frontend:
+    container_name: vue-app
+    build:
+      context: ./
+      dockerfile: ./frontend/Dockerfile
+    ports:
+      - "8080:8080"
+      - "8012:8012"
+    expose:
+      - "8080"
+      - "8012"
+    restart: on-failure
+    networks:
+      tbell-net:

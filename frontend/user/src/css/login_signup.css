@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* 공통(서비스의뢰+회원가입) */
+.wrap-type-1 { width: 100%; display: flex; justify-content: center; align-items: center; padding: 110px 10px 50px 10px; box-sizing: border-box; } 
+.wrap-type-1 section { width:55%; } 
+.wrap-type-1 .title-1 { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 0; box-sizing: border-box; border-bottom: 1.7px solid #ff4343; } 
+.input-area-3 .textarea-wrap { width: 100%; height: 200px; border: 1px solid #747474; border-radius: 3px; padding: 14px; box-sizing: border-box; overflow-y: scroll; } 
+.input-area-3 .textarea-wrap p { font-size: 12px; font-weight: 600; color: #808080; } 
+.input-area-3 .textarea-wrap::-webkit-scrollbar,.input-area-4 textarea::-webkit-scrollbar { width: 6px; } 
+.input-area-3 .textarea-wrap::-webkit-scrollbar-thumb, .input-area-4 textarea::-webkit-scrollbar-thumb { height: 17%; background-color: #a0a0a0; border-radius: 10px; } 
+.input-area-3 .textarea-wrap::-webkit-scrollbar-track,.input-area-4 textarea::-webkit-scrollbar-track { background-color: rgba(0,0,0,0); } 
+.input-area-3 .input-wrap { padding-top: 10px; box-sizing: border-box; } 
+.input-area-3 .input-wrap input[type=checkbox] { margin-right: 5px; } 
+.wrap-type-1 input[type=text] , .wrap-type-1 input[type=password] { width: 100%; border: 1px solid #747474; border-radius: 3px; font-size: 12px; font-weight: 500; padding: 7px 7px; box-sizing: border-box; } 
+.wrap-type-1 article { padding: 15px 0; box-sizing: border-box; } 
+.wrap-type-1 .btn-area { width: 100%; display: flex; justify-content: center; padding-top: 30px; box-sizing: border-box; } 
+.wrap-type-1 button { padding: 11px 45px; box-sizing: border-box; background-color: #FF4343; color: #ffffff; border-radius: 11px; font-size:15px; font-weight: 600;} 
+.wrap-type-1 .content-guide span{ font-weight: 800; } 
+
+/* 회원 가입/로그인 */
+
+
+.wrap-type-1 .signup-content, .wrap-type-1 .login-content { padding: 20px 0; box-sizing: border-box; } 
+.wrap-type-1 .signup-content .content-wrap-width { display: flex; justify-content: space-between; } 
+.wrap-type-1 .signup-content .content-wrap-width article { width: 48.5%; } 
+.wrap-type-1 .signup-content .title-area, .wrap-type-1 .login-content .title-area { padding-bottom: 5px; } 
+.wrap-type-1 .signup-content .title-area span, .wrap-type-1 .login-content .title-area span { font-size: 12px; font-weight: 600; color: #000000; } 
+.wrap-type-1 .signup-content .input-area-3 .input-wrap label, .wrap-type-1 .login-content .input-area-3 .input-wrap label { display: flex; align-items: center; font-size:11.5px; font-weight: 600; } 
+.wrap-type-1 .move-wrap { padding: 0; display: flex; justify-content: center; } 
+.wrap-type-1.move-wrap span { font-size: 11px; font-weight: 600; margin-right: 6px; } 
+.wrap-type-1 .move-wrap a { color: #FF4343; font-weight: 800; } 
+.wrap-type-1 .login .input-wrap { display: flex; } 
+.wrap-type-1 .login-content .input-area-3 .input-wrap label { padding-right: 30px; box-sizing: border-box; } 
+.wrap-type-1 .login-content .login-option-area { padding-top: 0; } 
+.wrap-type-1 .login-content .move-wrap { display: flex; } 
+.wrap-type-1 .login-content .move-wrap span { font-size: 11px; font-weight: 600; margin-right: 6px; } 
+.wrap-type-1 .login-content .move-wrap .find-password a { color: #000000; } 
+.wrap-type-1 .login-content .move-wrap:nth-child(2) { padding:0 5px; } 
+
+
+
+/* 회원가입 페이지 */
+.wrap-type-1 .content-wrap-width input{height: 60px; padding: 25px 46px 5px 10px; box-sizing: border-box; font-size: 16px; box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);}
+.wrap-type-1 .input-area{position: relative;}
+.wrap-type-1 .input-area .checked{position: absolute; top: 20px; right: 15px;}
+
+.wrap-type-1 .content-wrap-width .input-area .style0{border: 1px solid #747474;}
+.wrap-type-1 .content-wrap-width .input-area .style1{border: 2px solid #FF9100;}
+.wrap-type-1 .content-wrap-width .input-area .style2{border: 2px solid #58B464;}
+
+.wrap-type-1 .signup-content .title-area span{font-size: 16px;}
+.wrap-type-1 .signup-content .title-area {margin-bottom: 10px;}
+.wrap-type-1 .signup-content .input-area-3 .input-wrap label{font-size: 14px;}
+
+/* 회원가입 페이지-로그인 */
+.wrap-type-1 .move-wrap .move span{font-size: 14px;}
+.wrap-type-1.move-wrap .move span:first-child{margin-right: 10px;}
+
+
+.wrap-type-1 .login {width:420px;} 
+.wrap-type-1 .content-guide span{font-size: 20px;}
+.wrap-type-1 .login-content .input-area input{height: 60px; padding: 10px 10px; box-sizing: border-box; font-size: 16px; box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);}
+.wrap-type-1 .input-area{position: relative;}
+.wrap-type-1 .input-area label{position: absolute; top: 0; left: 0; font-size: 16px; width: 100%; font-weight: 700;}
+.wrap-type-1 .input-area label span{position: absolute; top: 23px; left: 10px; }
+.wrap-type-1 .input-area label span ins{position: relative; top: -10px;  font-size: 12px; font-weight: 700; display: inline;  text-decoration: none;}
+.wrap-type-1 .input-area input:focus{border: 2px solid #000000;}
+.wrap-type-1 .input-area input:focus + label span { font-size: 12px; font-weight: 700;}
+.wrap-type-1 .input-area input:focus .wrap-type-1 .input-area label #focus-show-no{display: none;}
+
+
+/* 로그인 페이지 - 아이디 저장/로그인상태유지 */
+.wrap-type-1 #btn-signup{position: relative; width: 420px; height: 60px; border-radius: 10px; font-size: 18px; box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);}
+.wrap-type-1 #btn-signup:hover{position: relative; top: 3px; box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);}
+.wrap-type-1 #btn-signup:disabled{background-color: #ddd ; color: #808080; box-shadow: none;}
+
+.wrap-type-1 .login-content .move-wrap span{font-size: 14px;}
+
+/* 로그인 페이지 - 인풋 경고 */
+.wrap-type-1  .warning-area{padding-top: 14px;}
+.wrap-type-1 .warning-area span{margin-left: 4px; font-size: 14px; font-weight: 600; color: #FF9100;}

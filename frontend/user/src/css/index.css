@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* 공통 */
+.title{text-align: center;}
+.title h2{padding-top: 80px; font-size: 28px;color: #ff4343;}
+.title p{margin-top: 10px; font-size: 28px; font-weight: 700;}
+header{position: fixed;}
+/* #wrap{overflow-x: hidden;} */
+.s-layout{padding: 120px 0 80px;}
+
+
+/* 섹션2 */
+.section2{width: 100%; background: url(../assets/front_image/section2-4.png) no-repeat center;}
+.content2{display: flex; padding: 80px 0;}
+.content2 li{width: 33%; text-align: center;}
+.content2 .bar1{margin: 30px 0; display: inline-block; width: 60px; border-bottom: 3px solid #ff4343;}
+.litop img{height: 75px;}
+.litop h3{margin: 30px 0 10px; font-size: 24px; font-weight: 700;}
+.litop p{display: flex; justify-content: center; align-items: center; font-size: 18px; color: #727272; line-height: 1.5; height: 54px;}
+.limid{height: 150px;}
+.limid li{margin-bottom: 15px; display: flex; justify-content: center; align-items: start; text-align: left; width: 100%;}
+.limid b{width: 150px; text-align: right; font-weight: 600;}
+.limid p{width: 150px; line-height: 1.5; color: #727272; font-weight: 400;}
+.limid .bar2{margin: 10px 20px 0; display: inline-block; width: 20px; border-bottom: 1px solid #747474;}
+.libtm{display: flex; justify-content: center; align-items: center; line-height: 1.5; height: 48px;}
+.libtm p{font-weight: 500;}
+
+/* 섹션3 */
+.section3{background: #f3f4f8;}
+.content3{position: relative; padding: 120px 0 0 110px; box-sizing: border-box;}
+.bg1{position: absolute; left: 0; top: 120px;}
+.bg2{position: absolute; top: -30px; right: 0;}
+.maincopy{position: relative; font-size: 30px;}
+.maincopy h3{z-index: 20; position: relative; font-weight: 800;}
+.maincopy .underline{z-index: 10; position: absolute; top: 14px; display: block; width: 370px; height: 20px; background: hsla(0, 100%, 63%, 0.3);}
+.subcopy{margin-top: 40px; font-size: 22px; line-height: 1.6;}
+.subcopy p{font-weight: 400;}
+.subcopy b{font-weight: 800;}
+.lastcopy{margin-top: 90px;}
+.lastcopy ins{text-decoration: none; font-weight: 800; color: #ff4343;}
+.request-box{margin-top: 148px; padding-bottom: 80px; display: flex; align-items: center;}
+.request-box span{display: block; border-bottom: 1px solid #ff4343; width: 90px; flex-grow: 1;}
+.request-box span:last-child{width: 810px;}

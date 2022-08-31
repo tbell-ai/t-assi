@@ -1,0 +1,24 @@
+/* 서비스의뢰 완료 */
+#main{padding-top: 80px;}
+.request-complete-wrap-1 {  width: 100%; display: flex; justify-content: center; align-items: center; padding: 60px 10px 170px 10px; box-sizing: border-box; } 
+.request-complete-wrap-1 article { padding: 15px 0; box-sizing: border-box; } 
+
+
+.request-complete-wrap-1  .title-1 { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 0; box-sizing: border-box; border-bottom: 1.7px solid #ff4343; } 
+
+.request-complete-wrap-1 .request-complete  { width:400px; } 
+.request-complete-wrap-1 .request-complete .request-complete-content {display: flex; flex-direction: column; align-items: center; 
+padding-top: 15px; box-sizing: border-box; }
+.request-complete-wrap-1 .request-complete .request-complete-content article:nth-child(2){padding: 5px 0; display: flex; flex-direction: column; align-items: center;}
+.request-complete-wrap-1 .request-complete .request-complete-content .content-guide span{font-size: 22px; font-weight: 800; }
+.request-complete-wrap-1 .request-complete .request-complete-content article p{font-size: 15px; font-weight: 700; padding: 2px 0;  box-sizing: border-box;}
+
+.request-complete-wrap-1 .login-content .input-area-3 .input-wrap label{font-size: 14px;}
+.request-complete-wrap-1 .request-complete .request-complete-content article #em{ color: #FF4343;}
+
+.request-complete-wrap-1 button { padding: 11px 45px; box-sizing: border-box; background-color: #FF4343; color: #ffffff; border-radius: 11px; font-size:15px; font-weight: 600;} 
+
+.request-complete-wrap-1 #btn-comfirm{position: relative; width: 420px; height: 60px; border-radius: 10px; font-size: 18px; box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);}
+
+.request-complete-wrap-1 article { padding: 15px 0; box-sizing: border-box; } 
+.request-complete-wrap-1 .btn-area { width: 100%; display: flex; justify-content: center; padding-top: 30px; box-sizing: border-box; } 

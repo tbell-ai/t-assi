@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0; padding:0}
+body,input,textarea,select,table,button{font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: normal; letter-spacing: 0px;}
+html,body{margin: 0; padding: 0; height: 100%;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;}
+img{vertical-align: bottom;}
+a{color: inherit;text-decoration: none;}
+address{font-style: normal;}
+table{padding: 0;margin: 0; border-spacing: 0; border-collapse: collapse;}
+th,td{padding: 0;}
+ol,ul,li{list-style: none;}
+button{background: transparent; border: none;}

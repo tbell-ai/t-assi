@@ -1,0 +1,52 @@
+/* 공통(서비스의뢰+회원가입) */
+.request-wrap-1 { width: 100%; display: flex; justify-content: center; align-items: center; padding: 110px 10px; box-sizing: border-box; } 
+.request-wrap-1 section { width:55%; } 
+.request-wrap-1 .title-1 { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 0; box-sizing: border-box; border-bottom: 1.7px solid #ff4343; } 
+.input-area-3 .textarea-wrap { width: 100%; height: 200px; border: 1px solid #747474; border-radius: 3px; padding: 14px; box-sizing: border-box; overflow-y: scroll; } 
+.input-area-3 .textarea-wrap p { font-size: 12px; font-weight: 600; color: #808080; } 
+.input-area-3 .textarea-wrap::-webkit-scrollbar,.input-area-4 textarea::-webkit-scrollbar { width: 6px; } 
+.input-area-3 .textarea-wrap::-webkit-scrollbar-thumb, .input-area-4 textarea::-webkit-scrollbar-thumb { height: 17%; background-color: #a0a0a0; border-radius: 10px; } 
+.input-area-3 .textarea-wrap::-webkit-scrollbar-track,.input-area-4 textarea::-webkit-scrollbar-track { background-color: rgba(0,0,0,0); } 
+.input-area-3 .input-wrap { padding-top: 10px; box-sizing: border-box; } 
+.input-area-3 .input-wrap input[type=checkbox] { margin-right: 5px; } 
+.request-wrap-1 input[type=text] { width: 100%; border: 1px solid #747474; border-radius: 3px; font-size: 12px; font-weight: 600; padding: 7px 7px; box-sizing: border-box; } 
+.request-wrap-1 article { padding: 15px 0; box-sizing: border-box; } 
+.request-wrap-1 .btn-area { width: 100%; display: flex; justify-content: center; padding-top: 30px; box-sizing: border-box; } 
+.request-wrap-1 button { padding: 11px 45px; box-sizing: border-box; background-color: #FF4343; color: #ffffff; border-radius: 11px; font-size:15px; font-weight: 600;} 
+.request-wrap-1 .content-guide span{ font-weight: 800; } 
+
+
+
+/* 서비스 의뢰 페이지 */
+.request-wrap-1 input[type=text]{font-size: 14px; height: 46px; box-sizing: border-box; padding: 10px;}
+.request-wrap-1 select{font-size: 14px; height: 46px; box-sizing: border-box; padding: 10px;}
+.request-wrap-1 option{font-size: 14px;}
+.request-wrap-1 input[type=date]{font-size: 14px; height: 46px; box-sizing: border-box; padding: 10px;}
+.request-wrap-1 .request-content .input-area-4 textarea{font-size: 14px;}
+.request-wrap-1 #btn-request{position: relative; width: 420px; height: 60px; border-radius: 10px; font-size: 18px; box-shadow: none;}
+.request-wrap-1 #btn-request:hover{box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);}
+.request-wrap-1 #btn-request:disabled{background-color: #ddd ; color: #808080; box-shadow: none;}
+
+
+
+/* 서비스 의뢰 */
+.request-wrap-1 .title-1 .title-main span { font-size: 24px; font-weight: 800; color: #000000; } 
+.request-wrap-1 .title-1 .title-sub { padding: 15px 0 10px 0; box-sizing: border-box; } 
+.request-wrap-1 .title-1 .title-sub span { font-size: 16px; font-weight: 600; margin: 20px 0; box-sizing: border-box; } 
+.request-wrap-1 .request-content{ padding: 20px 0; box-sizing: border-box; } 
+.request-wrap-1 .request-content .title-area{ padding-bottom: 10px; } 
+.request-wrap-1 .request-content .title-area span { font-size: 16px; font-weight: 600; color: #000000; } 
+.request-wrap-1 .request-content .input-area-1 select, .pj-content-area .pj-qna-create-content .input-area-1 select { width: 100%; border: 1px solid #747474; border-radius: 3px; font-size: 14px; font-weight: 600; padding: 7px 7px; box-sizing: border-box; } 
+.request-wrap-1 .request-content .input-area-1 input::placeholder, .pj-content-area .pj-qna-create-content .input-area-1 input::placeholder { font-size: 12px; font-weight: 600; color: #808080; } 
+.request-wrap-1 .request-content .input-area-2 { display: flex; align-items: center; justify-content: space-between; } 
+.request-wrap-1 .request-content .input-area-2  input{width: 48%; border: 1px solid #747474; border-radius: 3px; font-size: 14px; font-weight: 600; padding: 7px 7px; box-sizing: border-box; } 
+.request-wrap-1 .request-content .input-area-2 .date-select span { font-size: 12px; font-weight: 600; padding: 7px 7px; } 
+.request-wrap-1 .request-content .input-area-2 .date-select img { height: 18px; } 
+.request-wrap-1 .request-content .input-area-3 .input-wrap label { display: flex; align-items: center; font-size:15px; font-weight: 600; } 
+.request-wrap-1 .request-content .input-area-4 textarea, .pj-content-area .pj-qna-create-content .input-area-4 textarea{  width: 100%; border: 1px solid #747474; border-radius: 3px; font-size: 14px; font-weight: 600; padding: 7px 7px; box-sizing: border-box;}
+
+.request-wrap-1 input::placeholder{font-size: 18px;}
+
+/* 인풋 경고 */
+.request-wrap-1 .warning-area{padding-top: 14px;}
+.request-wrap-1 .warning-area span{margin-left: 4px; font-size: 14px; font-weight: 600; color: #FF9100;}

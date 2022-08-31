@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* 프로젝트 질의응답(등록) */
+#pj-main{height: 100%;}
+.pj-wrap { width: 100%; height: 100%;} 
+.pj-content-area .pj-qna-create-content .input-area {width: 100%;} 
+.pj-content-area .pj-qna-create-content .input-area input[type=text], .pj-content-area .pj-qna-create-content .input-area select { width: 500px; height: 40px; border: 1px solid #000; border-radius: 3px; font-size: 14px; font-weight: 500; padding: 7px 7px; box-sizing: border-box; } 
+.input-type-width { display: flex; align-items: center; padding-bottom: 14px; box-sizing: border-box; } 
+.pj-content-area .pj-qna-create-content .title-area { width: 150px; min-width: 150px;} 
+.pj-content-area .pj-qna-create-content .title-area span { font-size: 16px; font-weight: 700; color: #000000; } 
+/* .pj-content-area .pj-qna-create-content .input-area { width: calc(100% - 60px); }  */
+.pj-content-area .pj-qna-create-content{width: 100%;}
+.pj-content-area .pj-qna-create-content {padding-bottom: 20px; box-sizing: border-box;}
+.input-area-4 textarea {
+    width: 100%;
+    padding: 7px 7px; 
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 14px;
+    box-sizing: border-box;
+}

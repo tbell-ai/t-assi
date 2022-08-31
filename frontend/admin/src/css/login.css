@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+#container{width: 420px; margin: 180px auto 0;}
+
+/* 상단 */
+.top{box-sizing: border-box; padding-top: 25px; height: 100px; border-bottom: 1px solid #ff4343;}
+#logo{text-align: center;}
+/* 하단 */
+.bottom li{margin-bottom: 30px;}
+.bottom b img{width: 150px; margin: -4px 5px 0 0;}
+.bottom b{display: flex; margin-top: 20px; align-items: center; font-size: 24px; font-weight: 900;}
+.bottom p{margin-bottom: 10px; font-size: 18px; font-weight: 700;}
+.bottom input[type="text"]{width: 100%; border: 1px solid #000; height: 36px; border-radius: 5px; box-sizing: border-box; padding: 0 10px;}
+.bottom input[type="password"]{width: 100%; border: 1px solid #000; height: 36px; border-radius: 5px; color: #000;font-family: 'Noto Sans KR', sans-serif;box-sizing: border-box; padding: 0 10px; letter-spacing: 0;}
+
+.bottom label{font-size: 16px; font-weight: 700;}
+.box1{display: flex;}
+.box1 div{display: flex; margin-right: 30px;}
+.bottom input[type="checkbox"]{display: none;}
+.bottom input[type="checkbox"]+label{display: inline-block; width: 20px; height: 20px; border:1px solid #000; border-radius: 5px; position: relative;}
+.bottom input:checked+label::after{content: '';width: 14px; height: 14px; background: #ff4343; position: absolute; transform: translate(-50%,-50%); left: 50%; top: 50%; border-radius: 2px;}
+.label-text{margin-left: 10px; height: 24px; display: flex; align-items: center;}
+
+.box2{display: flex; justify-content: center;}
+.login-btn{width: 310px; background: #ff4343; color: #fff; height: 64px; font-size: 24px; font-weight: 700; border-radius: 20px;}
